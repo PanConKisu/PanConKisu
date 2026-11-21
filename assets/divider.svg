@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 36" width="1000" height="36" role="img" aria-label="star divider">
+  <defs>
+    <path id="star" d="M0,-10 L2.65,-3.64 L9.51,-3.09 L4.28,1.39 L5.88,8.09 L0,4.5 L-5.88,8.09 L-4.28,1.39 L-9.51,-3.09 L-2.65,-3.64 Z" stroke-width="2.6" stroke-linejoin="round"/>
+    <path id="sparkle" d="M0,-10 C1,-2 2,-1 10,0 C2,1 1,2 0,10 C-1,2 -2,1 -10,0 C-2,-1 -1,-2 0,-10 Z"/>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff9ecf" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#ff9ecf" stop-opacity="0.6"/>
+      <stop offset="0.5" stop-color="#b79cff" stop-opacity="0.6"/>
+      <stop offset="0.8" stop-color="#8fcbff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#8fcbff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .tw { transform-box: fill-box; transform-origin: center; animation: tw 2.4s ease-in-out infinite; }
+    @keyframes tw { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .4; transform: scale(.7); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect x="40" y="17" width="920" height="2" rx="1" fill="url(#line)"/>
+  <g transform="translate(200 18) scale(.7)"><use class="tw" href="#sparkle" fill="#ff9ecf"/></g>
+  <g transform="translate(320 18) scale(.9)"><use class="tw" href="#star" fill="#ffd966" stroke="#ffd966" style="animation-delay:.4s"/></g>
+  <g transform="translate(420 18) scale(.7)"><use class="tw" href="#sparkle" fill="#86ddb8" style="animation-delay:.8s"/></g>
+  <g transform="translate(500 18) scale(1.3)"><use class="tw" href="#star" fill="#b79cff" stroke="#b79cff" style="animation-delay:1.2s"/></g>
+  <g transform="translate(580 18) scale(.7)"><use class="tw" href="#sparkle" fill="#ffb38a" style="animation-delay:.8s"/></g>
+  <g transform="translate(680 18) scale(.9)"><use class="tw" href="#star" fill="#8fcbff" stroke="#8fcbff" style="animation-delay:.4s"/></g>
+  <g transform="translate(800 18) scale(.7)"><use class="tw" href="#sparkle" fill="#ff9ecf"/></g>
+</svg>
